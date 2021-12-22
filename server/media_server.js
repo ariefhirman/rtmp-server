@@ -4,7 +4,7 @@ const config = require('./config/default').rtmp_server;
 nms = new NodeMediaServer(config);
  
 nms.on('prePublish', async (id, StreamPath, args) => {
-    let stream_key = "123";
+    // let stream_key = "123";
     console.log('[NodeEvent on prePublish]', `id=${id} StreamPath=${StreamPath} args=${JSON.stringify(args)}`);
 });
  
